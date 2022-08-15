@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>答案页面</title>
+</head>
+<body>
+    <div id="app">
+        <el-table :data="tableData" border style="width: 100%">
+            <el-table-column prop="date" label="题号" width="180"></el-table-column>
+            <el-table-column prop="name" label="问题" width="180"></el-table-column>
+            <el-table-column prop="address" label="答案">
+
+            </el-table-column>
+        </el-table>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/element.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script type="text/javascript">
+        let app = new Vue({
+            el:"#app",
+        })
+    </script>
+</body>
+
+</html>
